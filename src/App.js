@@ -1,26 +1,18 @@
 import './App.css';
-import React, { Component } from 'react';
+import { useState } from 'react';
 
 import Searchbar from './components/Searchbar/Searchbar';
 import ImageGallery from './components/ImageGallery/ImageGallery';
 
-class App extends Component {
-  state = {
-    value: '',
-  };
+export default function App() {
+  const [value, setValue] = useState('');
 
-  searchValue = value => {
-    this.setState({ value });
-  };
+  const searchValue = value => setValue([value]);
 
-  render() {
-    return (
-      <div className="App">
-        <Searchbar inputValue={this.searchValue} />
-        <ImageGallery name={this.state.value} />
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <Searchbar inputValue={searchValue} />
+      <ImageGallery name={value} />
+    </div>
+  );
 }
-
-export default App;
