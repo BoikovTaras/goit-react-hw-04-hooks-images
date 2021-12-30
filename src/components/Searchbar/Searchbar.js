@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import s from './Searchbar.module.css';
 
 export default function Searchbar({ inputValue }) {
@@ -38,3 +39,8 @@ export default function Searchbar({ inputValue }) {
     </header>
   );
 }
+
+Searchbar.propTypes = {
+  input: PropTypes.string,
+  inputValue: PropTypes.func,
+};

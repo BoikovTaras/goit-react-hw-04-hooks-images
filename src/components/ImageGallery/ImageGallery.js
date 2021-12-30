@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
 import s from './ImageGallery.module.css';
 import Button from '../Button/Button';
@@ -75,3 +76,10 @@ export default function ImageGallery({ name }) {
     );
   }
 }
+
+ImageGallery.propTypes = {
+  page: PropTypes.number,
+  showModal: PropTypes.bool,
+  largeUrl: PropTypes.string,
+  sratus: PropTypes.string,
+};

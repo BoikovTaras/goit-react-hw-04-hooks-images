@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function fetchImage(name, page) {
   const KEY = '24115894-e73b87c75d7b7d0a00bbe3b23';
   return fetch(
@@ -13,3 +15,7 @@ function fetchImage(name, page) {
 const api = { fetchImage };
 
 export default api;
+fetchImage.propTypes = {
+  name: PropTypes.string,
+  page: PropTypes.string,
+};
