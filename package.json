@@ -1,7 +1,7 @@
 {
   "name": "goit-react-hw-04-hooks-images",
   "version": "0.1.0",
-  "homepage": "https:/BoikovTaras.github.io/goit-react-hw-04-hooks-images/",
+  "homepage": "https://BoikovTaras.github.io/goit-react-hw-04-hooks-images/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",

@@ -1,0 +1,144 @@
+.cssloadSquares {
+  position: relative;
+  display: block;
+  margin: 97px auto;
+  width: 107px;
+}
+
+.cssloadSquares,
+.cssloadSquares * {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.cssloadSquares span {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background: rgb(47, 172, 155);
+  border-radius: 0px;
+}
+
+.cssloadSquares span:nth-child(1) {
+  animation: rotateY 4.6s 0.35s infinite cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -o-animation: rotateY 4.6s 0.35s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -ms-animation: rotateY 4.6s 0.35s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -webkit-animation: rotateY 4.6s 0.35s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -moz-animation: rotateY 4.6s 0.35s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+}
+.cssloadSquares span:nth-child(2) {
+  animation: rotateY 4.6s 0.69s infinite cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -o-animation: rotateY 4.6s 0.69s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -ms-animation: rotateY 4.6s 0.69s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -webkit-animation: rotateY 4.6s 0.69s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -moz-animation: rotateY 4.6s 0.69s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+}
+.cssloadSquares span:nth-child(3) {
+  animation: rotateY 4.6s 1.04s infinite cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -o-animation: rotateY 4.6s 1.04s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -ms-animation: rotateY 4.6s 1.04s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -webkit-animation: rotateY 4.6s 1.04s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -moz-animation: rotateY 4.6s 1.04s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+}
+.cssloadSquares span:nth-child(4) {
+  animation: rotateY 4.6s 1.38s infinite cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -o-animation: rotateY 4.6s 1.38s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -ms-animation: rotateY 4.6s 1.38s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -webkit-animation: rotateY 4.6s 1.38s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -moz-animation: rotateY 4.6s 1.38s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+}
+.cssloadSquares span:nth-child(5) {
+  animation: rotateY 4.6s 1.73s infinite cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -o-animation: rotateY 4.6s 1.73s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -ms-animation: rotateY 4.6s 1.73s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -webkit-animation: rotateY 4.6s 1.73s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+  -moz-animation: rotateY 4.6s 1.73s infinite
+    cubic-bezier(0.65, 0.03, 0.735, 0.045);
+}
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+    background: rgb(147, 225, 215);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@-o-keyframes rotateY {
+  0% {
+    -o-transform: rotateY(0deg);
+  }
+  50% {
+    -o-transform: rotateY(90deg);
+    background: rgb(147, 225, 215);
+  }
+  100% {
+    -o-transform: rotateY(0deg);
+  }
+}
+
+@-ms-keyframes rotateY {
+  0% {
+    -ms-transform: rotateY(0deg);
+  }
+  50% {
+    -ms-transform: rotateY(90deg);
+    background: rgb(147, 225, 215);
+  }
+  100% {
+    -ms-transform: rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes rotateY {
+  0% {
+    -webkit-transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+    background: rgb(147, 225, 215);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+  }
+}
+
+@-moz-keyframes rotateY {
+  0% {
+    -moz-transform: rotateY(0deg);
+  }
+  50% {
+    -moz-transform: rotateY(90deg);
+    background: rgb(147, 225, 215);
+  }
+  100% {
+    -moz-transform: rotateY(0deg);
+  }
+}

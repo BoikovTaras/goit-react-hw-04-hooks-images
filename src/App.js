@@ -1,36 +1,26 @@
 import './App.css';
-import React, { Component } from "react";
-import { ToastContainer } from 'react-toastify';
+import React, { Component } from 'react';
 
 import Searchbar from './components/Searchbar/Searchbar';
-
+import ImageGallery from './components/ImageGallery/ImageGallery';
 
 class App extends Component {
   state = {
-    searchValue: ''
+    value: '',
   };
 
-  searchValue = searchValue => {
-    this.setState({ searchValue })
+  searchValue = value => {
+    this.setState({ value });
   };
 
   render() {
     return (
       <div className="App">
         <Searchbar inputValue={this.searchValue} />
-        <ToastContainer
-          position="top-center"
-          autoClose={4000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
-      </div>);
-  };
+        <ImageGallery name={this.state.value} />
+      </div>
+    );
+  }
 }
 
 export default App;
